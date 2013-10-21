@@ -13,6 +13,6 @@ public class Game {
     }
 
     public int score() {
-        return -1;  //To change body of created methods use File | Settings | File Templates.
+        return 0;  //To change body of created methods use File | Settings | File Templates.
     }
 }
