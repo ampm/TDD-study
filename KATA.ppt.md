@@ -51,4 +51,5 @@ Bowling Game Kata
 
 run test0
 
+run test01
  

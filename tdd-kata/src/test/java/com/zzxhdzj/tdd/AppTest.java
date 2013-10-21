@@ -1,12 +1,13 @@
 package com.zzxhdzj.tdd;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest extends TestCase{
-
+public class AppTest {
+    @Test
+    public void test_gutter_game() throws Exception{
+        Game game = new Game();
+    }
 }
