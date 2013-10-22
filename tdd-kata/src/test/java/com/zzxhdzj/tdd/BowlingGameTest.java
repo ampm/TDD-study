@@ -1,5 +1,6 @@
 package com.zzxhdzj.tdd;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -7,10 +8,16 @@ import static junit.framework.Assert.assertEquals;
 /**
  * Unit test for simple App.
  */
-public class AppTest {
+public class BowlingGameTest {
+    private Game game;
+
+    @Before
+    public void setUp() throws Exception{
+        game = new Game();
+    }
+
     @Test
     public void test_gutter_game() throws Exception{
-        Game game = new Game();
         for (int i=0;i<20;i++) {
             game.roll(0);
         }
@@ -18,10 +25,10 @@ public class AppTest {
     }
     @Test
     public void test_all_ones()throws Exception{
-        Game game = new Game();
         for (int i = 0;i<20;i++){
-            game.roll(i);
-            assertEquals(20,game.score());
+            game.roll(1);
         }
+        assertEquals(20,game.score());
+
     }
 }

@@ -8,11 +8,13 @@ package com.zzxhdzj.tdd;
  * To change this template use File | Settings | File Templates.
  */
 public class Game {
-    public void roll(int i) {
-        //To change body of created methods use File | Settings | File Templates.
+    private int score = 0;
+
+    public void roll(int pins) {
+        score +=pins;
     }
 
     public int score() {
-        return 0;  //To change body of created methods use File | Settings | File Templates.
+        return score;  //To change body of created methods use File | Settings | File Templates.
     }
 }
