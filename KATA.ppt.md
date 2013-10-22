@@ -52,4 +52,7 @@ Bowling Game Kata
 run test0
 
 run test01
+
+按照ppt里面的操作进行测试，测试失败，测试通过，重构，测试， 这种小粒度迭代即可
+
  
