@@ -22,6 +22,12 @@ public class BowlingGameTest {
         }
     }
 
+    private void rollSpare() {
+        game.roll(5);
+        game.roll(5);
+    }
+
+
     @Test
     public void test_gutter_game() throws Exception{
         int n = 20;
@@ -47,9 +53,13 @@ public class BowlingGameTest {
         assertEquals(16, game.score());
     }
 
-    private void rollSpare() {
-        game.roll(5);
-        game.roll(5);
+    @Test
+    public void test_one_strike() throws Exception{
+        game.roll(10);
+        game.roll(3);
+        game.roll(4);
+        rollMany(16,0);
+        assertEquals(24, game.score());
     }
 
 }
