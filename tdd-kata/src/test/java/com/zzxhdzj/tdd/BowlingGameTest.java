@@ -16,18 +16,25 @@ public class BowlingGameTest {
         game = new Game();
     }
 
+    private void rollMany(int n, int pins) {
+        for (int i=0;i<n;i++) {
+            game.roll(pins);
+        }
+    }
+
     @Test
     public void test_gutter_game() throws Exception{
-        for (int i=0;i<20;i++) {
-            game.roll(0);
-        }
+        int n = 20;
+        int pins = 0;
+        rollMany(n, pins);
         assertEquals(0,game.score());
     }
+
     @Test
     public void test_all_ones()throws Exception{
-        for (int i = 0;i<20;i++){
-            game.roll(1);
-        }
+        int n = 20;
+        int pins = 1;
+        rollMany(n, pins);
         assertEquals(20,game.score());
 
     }
