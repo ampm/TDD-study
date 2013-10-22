@@ -55,7 +55,7 @@ public class BowlingGameTest {
 
     @Test
     public void test_one_strike() throws Exception{
-        game.roll(10);
+        game.roll(10);//strike
         game.roll(3);
         game.roll(4);
         rollMany(16,0);
